@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Balloon Samples</title>
+	<style>
+	body {
+		padding: 0 10px 40px;
+	}
+	h2 {
+		font-size: 16px;
+
+	}
+	.ex1 {
+		width: 100px;
+		height: 100px;
+		background: #eee;
+
+	}
+	.ex2 {
+		width: 100px;
+		height: 100px;
+		background: #eee;
+		border-style: solid;
+		border-width: 20px;
+		border-color: red blue pink green;
+	}
+	.ex3 {
+		width: 0px;
+		height: 0px;
+		background: #eee;
+		border-style: solid;
+		border-width: 20px;
+		border-color: red blue pink green;
+	}
+	.ex4 {
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 20px;
+		border-color: red transparent transparent transparent;
+	}
+	.ex5 {
+		width: 0px;
+		height: 0px;
+		background: #eee;
+		border-style: solid;
+		border-width: 40px 20px 20px 0;
+		border-color: red transparent green transparent;
+		transform: skew(-20deg, 0);
+	}
+	.balloon1-1 {
+		width: 200px;
+		height: 100px;
+		background: #eee;
+		border-radius: 5px;
+		position: relative;
+	}
+	.balloon1-1:before {
+		position: absolute;
+		right: 20px;
+		bottom: -20px;
+		content: '';
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 10px;
+		border-color: #eee transparent transparent transparent;
+	}
+	.balloon1-2 {
+		width: 200px;
+		height: 100px;
+		background: #eee;
+		border-radius: 5px;
+		position: relative;
+	}
+	.balloon1-2:before {
+		position: absolute;
+		right: 20px;
+		bottom: -30px;
+		content: '';
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 20px 20px 10px 0;
+		border-color: #eee transparent transparent transparent;
+	}
+	.balloon2-1 {
+		width: 200px;
+		height: 100px;
+		border: 1px solid #eee;
+		border-radius: 5px;
+		position: relative;
+	}
+	.balloon2-1:before {
+		position: absolute;
+		right: 20px;
+		bottom: -20px;
+		content: '';
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 10px;
+		border-color: #eee transparent transparent transparent;
+	}
+	.balloon2-1:after {
+		position: absolute;
+		right: 20px;
+		bottom: -19px;
+		content: '';
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 10px;
+		border-color: #fff transparent transparent transparent;
+	}
+	.balloon2-2 {
+		width: 200px;
+		height: 100px;
+		border: 1px solid #eee;
+		border-radius: 5px;
+		position: relative;
+	}
+	.balloon2-2:before {
+		position: absolute;
+		right: 20px;
+		bottom: -30px;
+		content: '';
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 20px 20px 10px 0;
+		border-color: #eee transparent transparent transparent;
+	}
+	.balloon2-2:after {
+		position: absolute;
+		right: 19px;
+		bottom: -28px;
+		content: '';
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 20px 20px 10px 0;
+		border-color: #fff transparent transparent transparent;
+	}
+	</style>
+</head>
+<body>
+	<h2>ex1</h2>
+	<div class="ex1"></div>
+	<h2>ex2</h2>
+	<div class="ex2"></div>
+	<h2>ex3</h2>
+	<div class="ex3"></div>
+	<h2>ex4</h2>
+	<div class="ex4"></div>
+	<h2>ex5</h2>
+	<div class="ex5"></div>
+	<h2>balloon1-1</h2>
+	<div class="balloon1-1"></div>
+	<h2>balloon1-2</h2>
+	<div class="balloon1-2"></div>
+	<h2>balloon2-1</h2>
+	<div class="balloon2-1"></div>
+	<h2>balloon2-2</h2>
+	<div class="balloon2-2"></div>
+</body>
+</html>
